@@ -40,6 +40,7 @@ def mfcc(data, n=32, pace=10, overlap=5):
     for d in data:
         y = np.memmap(d, dtype='h', mode='r')
         l = len(y) / sr
+        print(l)
         if l > 5.12:
             max_l += 1
         reg.append(len(y))
