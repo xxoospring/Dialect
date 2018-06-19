@@ -73,7 +73,7 @@ def summary_op(data_type='train'):
 summ_op_train = summary_op()
 summ_op_dev = summary_op('val')
 
-saver = tf.train.Saver(max_to_keep=5)
+saver = tf.train.Saver(max_to_keep=5,)
 
 init = tf.global_variables_initializer()
 with tf.Session() as sess:
